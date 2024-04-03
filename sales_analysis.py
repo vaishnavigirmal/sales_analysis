@@ -1,7 +1,7 @@
 import sqlite3
 import csv
 
-conn = sqlite3.connect('your_database.db')
+conn = sqlite3.connect('my_database.db')
 c = conn.cursor()
 
 sql = """

@@ -47,10 +47,10 @@ results = c.fetchall()
 with open(r'C:\Users\yoges\OneDrive\Desktop\sales_analysis\output.csv', 'w', newline='') as csvfile:
 
     writer = csv.writer(csvfile, delimiter=';')
-    writer.writerow(['Customer ID', 'Age', 'Item Name', 'Quantity'])  # Corrected column names
+    writer.writerow(['Customer ID', 'Age', 'Item Name', 'Quantity'])  
 
     for row in results:
-        writer.writerow(row)  # Write each row directly
+        writer.writerow(row) 
 
 conn.close()
 
